@@ -146,7 +146,7 @@ static ssize_t dev_write(struct file *filep, const char *buffer, size_t len, lof
    if(len==1){
    // appending received string with its length
    size_of_message = 1;                 // store the length of the stored message
-   printk(KERN_INFO "EBBChar: Received 1 characters from the user\n");
+   printk(KERN_INFO "EBBChar: Received 1 char from the user\n");
    }
    else{
 	printk(KERN_INFO "EBBChar: too many characters\n");	
